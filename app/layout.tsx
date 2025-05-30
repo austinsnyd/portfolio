@@ -26,16 +26,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <header className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 border-b border-gray-200">
+        <header className="fixed top-0 left-0 right-0 bg-gradient-to-b from-white to-gray-50 z-50 border-b border-gray-200">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between h-16">
-              <Link href="/" className="text-xl font-bold text-gray-800">
-                Austin Snyder | Data Analyst
+              <Link href="/" className="text-xl text-gray-800">
+                <span className="font-bold">Austin Snyder</span> | <span className="font-extrabold">Data Analyst</span>
               </Link>
               <nav className="flex space-x-8">
-                <Link href="#about" className="text-gray-600 hover:text-gray-900">About</Link>
-                <Link href="#projects" className="text-gray-600 hover:text-gray-900">Projects</Link>
-                <Link href="#contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
+                <Link href="#about" className="text-gray-600 hover:text-gray-900 font-medium">About</Link>
+                <Link href="#projects" className="text-gray-600 hover:text-gray-900 font-medium">Projects</Link>
+                <Link href="#contact" className="text-gray-600 hover:text-gray-900 font-medium">Contact</Link>
               </nav>
             </div>
           </div>
