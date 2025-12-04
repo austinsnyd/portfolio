@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Austin Snyder - Data Science Portfolio",
-  description: "Data Science and Analytics Portfolio showcasing projects and skills in data analysis, machine learning, and business intelligence",
+  title: "Austin Snyder | Data Analyst",
+  description: "Portfolio site for Austin Snyder, Data Analyst and MS in Data Analytics graduate from Oregon State University.",
 };
 
 export default function RootLayout({
@@ -25,35 +25,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col bg-white`}>
-        <header className="w-full border-b">
-          <nav className="container mx-auto px-4 py-4">
-            <div className="flex justify-between items-center">
-              <Link href="/" className="text-xl font-bold">Austin Snyder | Data Analyst</Link>
-              <div className="space-x-6">
-                <Link href="/#about" className="hover:text-gray-600">About</Link>
-                <Link href="/#projects" className="hover:text-gray-600">Projects</Link>
-                <Link href="/#contact" className="hover:text-gray-600">Contact</Link>
-              </div>
-            </div>
-          </nav>
-        </header>
-
-        <main className="flex-grow">
-          {children}
-        </main>
-
-        <footer className="w-full border-t mt-auto">
-          <div className="container mx-auto px-4 py-6">
-            <div className="flex justify-between items-center">
-              <p>© {new Date().getFullYear()} Austin Snyder</p>
-              <div className="space-x-4">
-                <a href="https://github.com/austinsnyd" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600">GitHub</a>
-                <a href="https://www.linkedin.com/in/austin-snyder-researcher/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600">LinkedIn</a>
-              </div>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <header className="fixed top-0 left-0 right-0 bg-gradient-to-b from-white to-gray-50 z-50 border-b border-gray-200">
+          <div className="container mx-auto px-4">
+            <div className="flex items-center justify-between h-16">
+              <Link href="/" className="text-xl text-gray-800">
+                <span className="font-bold">Austin Snyder</span> | <span className="font-extrabold">Data Analyst</span>
+              </Link>
+              <nav className="flex space-x-8">
+                <Link href="#about" className="text-gray-600 hover:text-gray-900 font-medium">About</Link>
+                <Link href="#projects" className="text-gray-600 hover:text-gray-900 font-medium">Projects</Link>
+                <Link href="#contact" className="text-gray-600 hover:text-gray-900 font-medium">Contact</Link>
+              </nav>
             </div>
           </div>
-        </footer>
+        </header>
+        <main className="pt-16">
+          {children}
+        </main>
       </body>
     </html>
   );

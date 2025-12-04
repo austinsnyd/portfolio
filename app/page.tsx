@@ -1,11 +1,10 @@
-import Image from "next/image";
 import { FaPython, FaDatabase, FaRProject } from "react-icons/fa";
 import { SiApachespark, SiGooglebigquery, SiRadstudio } from "react-icons/si";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
-      {/* Hero Section - Reduced size */}
+    <div className="flex flex-col min-h-screen">
+      {/* Hero Section */}
       <section className="py-12 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
@@ -22,46 +21,31 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section with Photo */}
+      {/* About Section */}
       <section id="about" className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 tracking-tight">
-            <span className="text-gray-50">
+            <span className="text-gray-800">
               About Me
             </span>
           </h2>
           <div className="max-w-4xl mx-auto">
-            <div className="flex flex-col md:flex-row gap-8 items-start">
-              {/* Photo Section */}
-              <div className="w-full md:w-1/3">
-                <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-lg">
-                  <Image
-                    src="/profile-photo.jpg"
-                    alt="Austin Snyder"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover"
-                    priority
-                    quality={85}
-                  />
-                </div>
-              </div>
-
+            <div className="flex flex-col gap-8">
               {/* Text Content */}
-              <div className="w-full md:w-2/3">
-                <p className="text-gray-600 mb-8 flex items-start">
+              <div className="w-full">
+                <p className="text-gray-600 mb-8 flex items-start font-[family-name:var(--font-geist-sans)]">
                   <span className="text-blue-600 mr-2 text-xl">•</span>
                   Hello! I&apos;m a recent MS in Data Analytics graduate from Oregon State University, with a background in Psychology and minors in Statistics and Business Administration. My academic journey sharpened my ability to think critically about data, behavior, and systems, and fueled my passion for solving problems through analytics.
                 </p>
-                <p className="text-gray-600 mb-8 flex items-start">
+                <p className="text-gray-600 mb-8 flex items-start font-[family-name:var(--font-geist-sans)]">
                   <span className="text-blue-600 mr-2 text-xl">•</span>
                   Most recently, I worked as a Data Analyst at DaBella, where I collaborated with HR and Recruiting teams to build dashboards, automate systems, and unify data pipelines across 36+ markets. From building PostgreSQL databases to using Tableau for reporting, I helped drive strategic hiring decisions, improve retention, and streamline data workflows across departments.
                 </p>
-                <p className="text-gray-600 mb-8 flex items-start">
+                <p className="text-gray-600 mb-8 flex items-start font-[family-name:var(--font-geist-sans)]">
                   <span className="text-blue-600 mr-2 text-xl">•</span>
                   I&apos;m currently seeking my next opportunity to apply and expand my data science skills. I&apos;m especially motivated by roles where I can contribute to solving meaningful problems, learn from others, and keep growing technically!
                 </p>
-                <p className="text-gray-600 mb-8 flex items-start">
+                <p className="text-gray-600 mb-8 flex items-start font-[family-name:var(--font-geist-sans)]">
                   <span className="text-blue-600 mr-2 text-xl">•</span>
                   Outside of work, I love to cook, experiment with new recipes, and stay active.
                 </p>
