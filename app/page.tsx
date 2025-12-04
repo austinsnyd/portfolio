@@ -4,7 +4,7 @@ import { SiApachespark, SiGooglebigquery, SiRadstudio } from "react-icons/si";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-white">
       {/* Hero Section - Reduced size */}
       <section className="py-12 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto px-4">
